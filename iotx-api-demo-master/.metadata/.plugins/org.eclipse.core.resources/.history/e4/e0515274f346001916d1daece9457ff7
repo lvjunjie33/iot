@@ -1,0 +1,25 @@
+package snod.com.cn.iot.config;
+
+import org.apache.commons.codec.binary.StringUtils;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MqttConfig {
+
+	
+	
+	
+	/**
+	   * MQTT连接器选项
+	   *
+	   * @return {@link org.eclipse.paho.client.mqttv3.MqttConnectOptions}
+	   */
+	  @Bean
+	  public MqttConnectOptions getMqttConnectOptions() {
+	    MqttConnectOptions options = new MqttConnectOptions();
+	    System.out.println(1);
+	    return options;
+	  }
+}

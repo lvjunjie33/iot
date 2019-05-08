@@ -1,0 +1,24 @@
+package snod.com.cn.iot.config;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+
+@Component
+@Order(value=1)
+public class MqttConfig implements CommandLineRunner{
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(1);
+	}
+
+	
+	
+
+	
+}

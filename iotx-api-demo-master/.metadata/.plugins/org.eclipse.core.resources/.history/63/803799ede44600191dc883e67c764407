@@ -1,0 +1,5 @@
+package snod.com.cn.iot.config;
+
+public class MqttConfig {
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.aliyun.openservices.iot.api.Profile"/>
+<fullyQualifiedTypeName name="com.aliyun.openservices.iot.api.message.api.MessageClient"/>
+<fullyQualifiedTypeName name="com.aliyun.openservices.iot.api.message.MessageClientFactory"/>
+<fullyQualifiedTypeName name="com.aliyun.openservices.iot.api.message.entity.Message"/>
+<fullyQualifiedTypeName name="com.aliyuncs.iot.model.v20180120.SetDevicePropertyRequest"/>
+<fullyQualifiedTypeName name="com.aliyuncs.iot.model.v20180120.SetDevicePropertyResponse"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.apache.commons.codec.binary.StringUtils"/>
+<fullyQualifiedTypeName name="com.aliyuncs.iot.model.v20180120.PubRequest"/>
+<fullyQualifiedTypeName name="com.aliyuncs.iot.model.v20180120.PubResponse"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+<fullyQualifiedTypeName name="org.springframework.core.annotation.Order"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationListener"/>
+<fullyQualifiedTypeName name="org.springframework.context.event.ContextRefreshedEvent"/>
+<fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttCallback"/>
+<fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttMessage"/>
+<fullyQualifiedTypeName name="com.aliyuncs.exceptions.ServerException"/>
+<fullyQualifiedTypeName name="com.aliyuncs.exceptions.ClientException"/>
+<fullyQualifiedTypeName name="com.aliyuncs.profile.DefaultProfile"/>
+<fullyQualifiedTypeName name="com.aliyuncs.profile.IClientProfile"/>
+<fullyQualifiedTypeName name="com.aliyuncs.DefaultAcsClient"/>
+<fullyQualifiedTypeName name="snod.com.cn.iot.device.a1lK0waMzT5.Idevice_two"/>
+<fullyQualifiedTypeName name="snod.com.cn.iot.device.common.Ibasic"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSONObject"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSON"/>
+</qualifiedTypeNameHistroy>

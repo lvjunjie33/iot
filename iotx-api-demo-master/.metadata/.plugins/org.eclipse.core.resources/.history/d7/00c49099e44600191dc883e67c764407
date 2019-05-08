@@ -1,0 +1,41 @@
+package snod.com.cn.iot;
+
+import org.apache.commons.codec.binary.Base64;
+
+import com.alibaba.fastjson.JSONObject;
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.iot.model.v20170420.PubRequest;
+import com.aliyuncs.iot.model.v20170420.PubResponse;
+import com.aliyuncs.iot.model.v20180120.SetDevicePropertyRequest;
+import com.aliyuncs.iot.model.v20180120.SetDevicePropertyResponse;
+import com.aliyuncs.profile.DefaultProfile;
+import com.aliyuncs.profile.IClientProfile;
+
+public class pubTest extends BaseTest{
+	
+	
+	
+	public static void main(String[] args) {
+		// 阿里云accessKey
+        String productKey = "a1lK0waMzT5";
+        // 阿里云accessSecret
+        String topic ="/a1lK0waMzT5/device/get";
+        String msg = "hello world";
+		 PubRequest request = new PubRequest();
+	        request.setProductKey(productKey);
+	        request.setTopicFullName(topic);
+	        request.setMessageContent(Base64.encodeBase64String(msg.getBytes()));
+	        request.setQos(1);
+	        PubResponse response = (PubResponse)executeTest(request);
+	        if (response != null && response.getSuccess() != false) {
+	            LogUtil.print("发送消息成功！messageId：" + response.getMessageId());
+	        } else {
+	            LogUtil.error("发送消息失败！requestId:" + response.getRequestId() + "原因：" + response.getErrorMessage());
+
+	        }
+		
+	}
+
+	
+}

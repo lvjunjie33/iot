@@ -1,0 +1,22 @@
+package snod.com.cn.iot.config;
+
+import org.apache.commons.codec.binary.StringUtils;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.event.ContextRefreshedEvent;
+
+@Configuration
+public class MqttConfig  {
+
+	
+	
+	
+		@Bean
+	    public IotListener aListener(){
+	        return new IotListener();
+	    }
+	
+}

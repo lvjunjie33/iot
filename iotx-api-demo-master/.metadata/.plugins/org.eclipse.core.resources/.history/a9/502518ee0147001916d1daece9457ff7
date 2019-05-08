@@ -1,0 +1,48 @@
+package snod.com.cn.iot.test;
+
+import org.apache.commons.codec.binary.Base64;
+
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.exceptions.ServerException;
+import com.aliyuncs.iot.model.v20180120.PubRequest;
+import com.aliyuncs.iot.model.v20180120.PubResponse;
+import com.aliyuncs.profile.DefaultProfile;
+import com.aliyuncs.profile.IClientProfile;
+
+import snod.com.cn.iot.base.BaseTest;
+import snod.com.cn.iot.util.LogUtil;
+
+public class pubTest extends BaseTest{
+	
+	
+	
+	public static void main(String[] args) {
+			String accessKey = "LTAIfZB0R23btV3j";
+	        String accessSecret = "J8B8NMFHq901PASSn86vnfkFO7gL8A";
+	        try {
+	            DefaultProfile.addEndpoint("cn-shanghai", "cn-shanghai", "Iot", "iot.cn-shanghai.aliyuncs.com");
+	        } catch (ClientException e) {
+	            e.printStackTrace();
+	        }
+	        IClientProfile profile = DefaultProfile.getProfile("cn-shanghai", accessKey, accessSecret);
+	        DefaultAcsClient client = new DefaultAcsClient(profile); //初始化SDK客户端
+	        PubRequest request = new PubRequest();
+	        request.setProductKey("device");
+	        request.setMessageContent(Base64.encodeBase64String("消息服务".getBytes()));
+	        request.setTopicFullName("/a1lK0waMzT5/device/get");// /UGlr70uPYVM/bulb/get
+	        request.setQos(0); //目前支持QoS0和QoS1 
+	        PubResponse response; 
+	        try { response = client.getAcsResponse(request); 
+	        System.out.println(response.getSuccess()); 
+	        System.out.println(response.getErrorMessage()); 
+	        } catch (ServerException e) { 
+	        	e.printStackTrace(); 
+	        } 
+	        catch (ClientException e) { 
+	        	e.printStackTrace(); 
+	        }
+	}
+
+	
+}

@@ -1,0 +1,13 @@
+package snod.com.cn.iot.device.a1lK0waMzT5;
+
+import snod.com.cn.iot.device.common.Idevice_two;
+
+public class device_two implements Idevice_two{
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
